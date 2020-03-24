@@ -1,0 +1,155 @@
+@import "reset";
+@import "framework";
+@import "variables";
+@import "typography";
+@import "colors";
+@import "buttons";
+@import "lists";
+
+* {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body,
+html {
+  background-color: $background-color;
+  font-family: $secondary-font-family;
+  letter-spacing: .8px;
+  color: black;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+a:visited,
+a:active {
+  color: $link-color;
+  text-decoration: $link-decoration;
+  transition: .2s all linear;
+  &:hover {
+    color: $link-color-hover;
+    text-decoration: $link-decoration-hover;
+    cursor: pointer;
+    &.button {
+      text-decoration: none;
+    }
+  }
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: $medium-gray;
+  margin: 60px 0;
+  @media screen and (max-width: $breakpoint-mobile) {
+    margin: 20px 0 40px 0;
+  }
+}
+
+br {
+  &.desktop {
+    @media all and (max-width: 1310px) {
+      display: none;
+    }
+  }
+}
+
+section {
+  &.padding {
+    padding: 100px 0;
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding: 40px 0;
+    }
+  }
+  &.padding-top {
+    padding-top: 100px;
+    @media screen and (max-width: $breakpoint-mobile) {
+      padding-top: 40px;
+    }
+  }
+}
+
+.container {
+  position: relative;
+  width: calc(100% - 40px);
+  max-width: calc(1600px - 40px);
+  margin: auto;
+  &.smaller {
+    width: calc(100% - 160px);
+    max-width: calc(1600px - 160px);
+    @media all and (max-width: $breakpoint-tablet) {
+      width: calc(100% - 40px);
+    }
+  }
+}
+
+.width67 {
+  max-width: 67%;
+  @media all and (max-width: $breakpoint-tablet) {
+    max-width: 100%;
+  }
+}
+
+.left-margin {
+  margin-left: 40px;
+  @media all and (max-width: $breakpoint-mobile) {
+    margin-left: 0;
+  }
+}
+
+.right-margin {
+  margin-right: 40px;
+  @media all and (max-width: $breakpoint-mobile) {
+    margin-right: 0;
+  }
+}
+
+.top-margin {
+  margin-top: 10px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.hero-secondary {
+  padding: 50px 0;
+  background: $light-gray url("../images/secondary-hero.jpg") no-repeat center center;
+  background-size: cover;
+  min-height: 80px;
+  h1 {
+    text-transform: capitalize;
+    line-height: 80px;
+    color: white;
+    font-weight: 400;
+    max-width: 650px;
+    margin: 0;
+    @media screen and (max-width: $breakpoint-mobile) {
+      line-height: 55px;
+      font-size: 45px;
+    }
+  }
+  p {
+    color: white;
+    margin-bottom: 10px;
+  }
+  @media screen and (max-width: $nav-breakpoint) {
+    margin-top: 80px;
+  }
+}
+
+@import "header";
+@import "footer";
+@import "home";
+@import "contact";
+@import "practice-areas";
+@import "press-releases";
+@import "attorneys";

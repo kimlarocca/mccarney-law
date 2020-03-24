@@ -1,0 +1,16 @@
+.practice-areas {
+  aside {
+    margin-top: 40px;
+    ol {
+      li {
+        margin-bottom: 20px;
+        font-family: $primary-font-family;
+        color: $primary-color;
+        line-height: 25px;
+      }
+    }
+    @media screen and (max-width: $breakpoint-mobile) {
+      margin-top: 0;
+    }
+  }
+}

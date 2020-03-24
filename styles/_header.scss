@@ -1,0 +1,178 @@
+$nav-slide-out-speed: 500ms;
+$nav-slide-out-from: right; // top, right or left
+$nav-trigger-height: 100px; // offsets menu when sliding down from the top
+$nav-hamburger-color: $primary-color;
+
+header {
+  z-index: 20;
+  .container {
+    width: calc(1600px - 160px);
+    max-width: calc(100% - 160px);
+    @media screen and (max-width: $nav-breakpoint) {
+      max-width: calc(100% - 40px);
+    }
+    .bs_row {
+      height: 80px;
+      .bs_three {
+        @media screen and (max-width: $nav-breakpoint) {
+          flex: 6;
+        }
+      }
+      .bs_six {
+        @media screen and (max-width: $nav-breakpoint) {
+          flex: 1;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: $nav-breakpoint) {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+  }
+}
+
+nav {
+  font-family: $primary-font-family;
+  letter-spacing: .1px;
+  z-index: 30;
+  margin-bottom: 15px;
+  #trigger {
+    display: none;
+    cursor: pointer;
+    @media screen and (max-width: $nav-breakpoint) {
+      display: block;
+    }
+  }
+  .button {
+    margin-left: 20px;
+    @media screen and (max-width: $nav-breakpoint) {
+      margin-left: 0;
+    }
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 15px 0 0 0;
+    transition: linear $nav-slide-out-speed;
+    a,
+    a:visited,
+    a:active {
+      color: $dark-gray;
+      padding-bottom: 10px;
+      border-bottom: 2px solid white;
+    }
+    a:hover {
+      color: $dark-gray!important;
+      text-decoration: none;
+      border-bottom: 2px solid $secondary-color;
+    }
+    li {
+      display: inline-block;
+      text-transform: capitalize;
+      font-weight: 400;
+      margin: 0 15px;
+      padding: 0;
+      @media screen and (max-width: $nav-breakpoint) {
+        color: $primary-color;
+        display: block;
+        border-bottom: solid 1px white;
+        padding: 20px 20px 0 20px;
+        margin: 0;
+        //border-bottom: solid 1px $secondary-color;
+      }
+      &::before {
+        content: '';
+      }
+    }
+    @media screen and (max-width: $nav-breakpoint) {
+      width: 300px;
+      background-color: white;
+      position: fixed;
+      top: 70px;
+      bottom: 0;
+      height: 100%;
+      //border-left: solid 1px $tertiary-color;
+      @if $nav-slide-out-from == right {
+        right: calc(-100%);
+        &.open {
+          right: 0;
+        }
+      }
+      @if $nav-slide-out-from == left {
+        left: calc(-100%);
+        &.open {
+          left: 0;
+        }
+      }
+      @if $nav-slide-out-from == top {
+        top: calc(-100%);
+        &.open {
+          top: $nav-trigger-height;
+        }
+      }
+    }
+  }
+  .hamburger {
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    width: 2em;
+    height: 45px;
+    z-index: 5;
+    div {
+      position: relative;
+      width: 3em;
+      height: 5px;
+      border-radius: 3px;
+      background-color: $nav-hamburger-color;
+      margin-top: 6px;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  //hamburger animations
+  #toggle {
+    display: none;
+    &:checked + .hamburger .top-bun {
+      transform: rotate(-45deg);
+      margin-top: 18px;
+    }
+    &:checked + .hamburger .bottom-bun {
+      opacity: 0;
+      transform: rotate(45deg);
+    }
+    &:checked + .hamburger .meat {
+      transform: rotate(45deg);
+      margin-top: -5px;
+    }
+    &:checked + .hamburger + .nav {
+      top: 0;
+      transform: scale(1);
+    }
+  }
+}
+
+.logo {
+  font-family: $primary-font-family;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: .1px;
+  a,
+  a:visited,
+  a:active {
+    color: black;
+  }
+  a:hover {
+    color: black!important;
+    text-decoration: none;
+  }
+  @media screen and (max-width: $nav-breakpoint) {
+    margin-left: -10px;
+  }
+  @media screen and (max-width: $breakpoint-mobile) {
+    font-size: 25px;
+  }
+}

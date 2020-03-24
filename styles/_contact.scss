@@ -1,0 +1,10 @@
+.contact {
+  .icon {
+    float: left;
+    margin-right: 20px;
+    transition: .2s all linear;
+    &:hover {
+      opacity: .7;
+    }
+  }
+}

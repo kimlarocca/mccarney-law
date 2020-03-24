@@ -1,0 +1,87 @@
+$breakpoint-tablet: 1220px;
+$breakpoint-mobile: 768px;
+$nav-breakpoint: 1350px;
+
+//Colors
+$background-color: white;
+$light-gray: #f0f0f0;
+$medium-gray: #ccc;
+$dark-gray: #4d4d4f;
+$primary-color: #005199;
+$secondary-color: #FE6847;
+$tertiary-color: #006CCD;
+$quaternary-color: $dark-gray;
+
+//Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i|Libre+Baskerville:400,700');
+$primary-font-family: 'Libre Baskerville', serif;
+$secondary-font-family: 'Lato', sans-serif;
+
+//Typography
+$h1-font-family: $primary-font-family;
+$h1-size: 60px;
+$h1-weight: 400;
+$h1-color: $primary-color;
+$h1-line-height: 1.25em;
+$h1-margin: 30px;
+$h1-transform: none;
+
+$h2-font-family: $primary-font-family;
+$h2-size: 35px;
+$h2-weight: 400;
+$h2-color: $secondary-color;
+$h2-line-height: 1.25em;
+$h2-margin: 30px;
+$h2-transform: none;
+
+$h3-font-family: $primary-font-family;
+$h3-size: 25px;
+$h3-weight: 700;
+$h3-color: $tertiary-color;
+$h3-line-height: 1.5em;
+$h3-margin: 20px;
+$h3-transform: none;
+
+$h4-font-family: $primary-font-family;
+$h4-size: 20px;
+$h4-weight: 700;
+$h4-color: black;
+$h4-line-height: 1.5em;
+$h4-margin: 20px;
+$h4-transform: capitalize;
+
+$p-font-family: $secondary-font-family;
+$p-size: 17px;
+$p-weight: 400;
+$p-color: black;
+$p-line-height: 1.5em;
+$p-margin: 30px;
+$p-transform: none;
+
+//Links
+$link-color: $primary-color;
+$link-decoration: none;
+$link-color-hover: $secondary-color;
+$link-decoration-hover: none;
+
+//Buttons
+$button-font: $secondary-font-family;
+$button-font-size: 16px;
+$button-font-color: white;
+$button-font-weight: 400;
+$button-text-transform: capitalize;
+$button-background-color: $secondary-color;
+$button-border: 1px solid $secondary-color;
+$button-background-color-hover: white;
+$button-font-color-hover: $secondary-color;
+$button-border-hover: 1px solid $secondary-color;
+$button-padding: 15px 30px;
+$button-transition: .25s all linear;
+
+//Lists
+$ul-margin: 0 0 30px 0;
+$li-content: '\2022'; //set to a bullet ('\2022') by default
+$li-content-color: $primary-color;
+$li-content-size: 17px;
+$li-content-distance-from-top: 0;
+$li-content-distance-from-left: 20px;

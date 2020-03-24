@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_agent" value="name:companyID;datatype:INTEGER,name:username;datatype:LONGCHAR,name:password;datatype:LONGCHAR,name:company;datatype:LONGCHAR,name:address;datatype:LONGCHAR,name:city;datatype:LONGCHAR,name:state;datatype:LONGCHAR,name:zip;datatype:LONGCHAR,name:officeNumber;datatype:LONGCHAR,name:faxNumber;datatype:LONGCHAR,name:tollFreeNumber;datatype:LONGCHAR,name:emailAddress;datatype:LONGCHAR,name:websiteAddress;datatype:LONGCHAR,name:homePage;datatype:LONGCHAR,name:aboutUs;datatype:LONGCHAR,name:practiceAreas;datatype:LONGCHAR,name:linksPage;datatype:LONGCHAR,name:publicationsPage;datatype:LONGCHAR,name:careersPage;datatype:LONGCHAR,name:contactPage;datatype:LONGCHAR,name:metaTitle;datatype:LONGCHAR,name:metaKeywords;datatype:LONGCHAR,name:metaDescription;datatype:LONGCHAR" />
+</info>

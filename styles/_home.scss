@@ -1,0 +1,55 @@
+.home {
+  .hero {
+    background: $light-gray url("../images/home-hero-large.jpg") no-repeat center center;
+    height: 600px;
+    width: 100%;
+    position: relative;
+    .hero-content {
+      position: absolute;
+      bottom: 60px;
+      left: 80px;
+      h1 {
+        text-transform: capitalize;
+        line-height: 70px;
+        font-size: 60px;
+        margin: 0 0 30px 0;
+        color: white;
+        font-weight: 700;
+        max-width: 650px;
+        @media screen and (max-width: $breakpoint-mobile) {
+          line-height: 55px;
+          font-size: 45px;
+        }
+      }
+      @media screen and (max-width: $nav-breakpoint) {
+        left: 15px;
+        margin-right: 15px;
+      }
+    }
+  }
+  .practice-areas {
+    padding: 60px;
+    background: white;
+    padding: 40px 40px 60px 40px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(143, 143, 143, 0.5);
+    -moz-box-shadow: 0px 0px 10px 0px rgba(143, 143, 143, 0.5);
+    box-shadow: 0px 0px 10px 0px rgba(143, 143, 143, 0.5);
+    h3 {
+      color: $primary-color;
+    }
+    &.blue {
+      background: $primary-color;
+      h3,
+      p {
+        color: white;
+      }
+    }
+    @media all and (max-width: $breakpoint-mobile) {
+      margin-bottom: 30px;
+    }
+  }
+
+  #about {
+    background: white url("../images/city-gray-bg.jpg") no-repeat bottom center;
+  }
+}

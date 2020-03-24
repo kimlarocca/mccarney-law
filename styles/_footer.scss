@@ -1,0 +1,35 @@
+footer {
+  background-image: linear-gradient(to right, $dark-gray 70%, black 30%);
+  @media all and (max-width: $breakpoint-mobile) {
+    background-image: none;
+    img {
+      padding: 40px 0;
+    }
+    .container {
+      padding: 0;
+      @media all and (max-width: $breakpoint-mobile) {
+        width: 100%;
+      }
+    }
+  }
+  .footerCopy {
+    padding: 50px 50px 50px 0;
+    @media all and (max-width: $breakpoint-mobile) {
+      padding: 40px;
+    }
+  }
+  p {
+    font-size: 14px;
+    color: white;
+    margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+  h3 {
+    color: white;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+  }
+}
