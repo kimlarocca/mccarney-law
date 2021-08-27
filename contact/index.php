@@ -22,19 +22,19 @@ include '../_header.php'
 
                 <div class="bs_row bs_top">
                     <div class="bs_one right-margin bs_margin40">
-                        <img src="../images/map.jpg">
+                        <img src="../images/map.jpg" alt="map to McCarney Law P.C.">
                     </div>
                     <div class="bs_one">
                         <div><h2 class="fancy">McCarney Law P.C.</h2>
                             <p>Please contact us if you have any questions or requests concerning our services.</p>
-                            <p>29 Broadway, Suite 1400<br>
+                            <p>29 Broadway, Suite 2700<br>
                                 New York, New York 10006<br>
                                 212.797.1338 (office)<br>
                                 212.797.3545 (fax)</p>
                             <div class="icon"><a href="mailto:info@mccarneylaw.com"><img
-                                            src="../images/icons-email.gif"></a></div>
-                            <div class="icon"><a href="http://www.linkedin.com/pub/james-g-mccarney/39/84/19b"
-                                                 target="_blank"><img src="../images/icons-linkedin.gif"></a></div>
+                                            src="../images/icons-email.gif" alt="email McCarney Law P.C."></a></div>
+                            <div class="icon"><a href="https://www.linkedin.com/pub/james-g-mccarney/39/84/19b"
+                                                 target="_blank"><img src="../images/icons-linkedin.gif" alt="visit McCarney Law P.C. on linked in"></a></div>
                         </div>
                     </div>
                 </div>
