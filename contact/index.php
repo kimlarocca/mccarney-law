@@ -27,7 +27,7 @@ include '../_header.php'
                     <div class="bs_one">
                         <div><h2 class="fancy">McCarney Law P.C.</h2>
                             <p>Please contact us if you have any questions or requests concerning our services.</p>
-                            <p>29 Broadway, Suite 2700<br>
+                            <p>29 Broadway, Suite 2400<br>
                                 New York, New York 10006<br>
                                 212.797.1338 (office)<br>
                                 212.797.3545 (fax)</p>
