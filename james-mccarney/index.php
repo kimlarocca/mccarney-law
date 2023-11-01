@@ -4,7 +4,7 @@ $contactName = "James G. McCarney";
 $contactEmail = "jmccarney@mccarneylaw.com";
 $contactCellPhone = "+15167298500";
 $contactWorkPhone = "+12127971338";
-$contactWorkAddress = "29 Broadway, Suite 2400, New York NY 10006, USA";
+$contactWorkAddress = "29 Broadway\\nSuite 2400\\nNew York NY 10006\\nUSA";
 $contactWebsite = "https://www.mccarneylaw.com";
 
 // Create a vCard string
